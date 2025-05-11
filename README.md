@@ -2,7 +2,7 @@
 ## Project Objective
 To Create an interactive dashboard using `weight-height-updated` dataset to analyze health metrics.
 
-#Project Overview
+# Project Overview
 
 1. Importing Data
 Importing our `csv.file` to Power BI
