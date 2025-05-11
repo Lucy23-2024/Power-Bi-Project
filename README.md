@@ -20,7 +20,7 @@ BMI = DIVIDE(
 
 ```
 #Note: 
-~The BMI is expressed in kg/m2, resulting from mass in kilograms and height in metres.~
-~If pounds and inches are used, a conversion factor of 703 (kg/m2)/(lb/in2) is applied.~
+*The BMI is expressed in kg/m2, resulting from mass in kilograms and height in metres.*
+*If pounds and inches are used, a conversion factor of 703 (kg/m2)/(lb/in2) is applied.*
 
  
