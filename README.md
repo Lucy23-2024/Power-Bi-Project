@@ -44,16 +44,56 @@ Age = YEAR(TODAY())- ('weight-height-updated'[Born_Year])
 Group individuals into health-related categories for visual analysis
 Formula:
 ``` Dax
+
 BMI Group = IF('weight-height-updated'[BMI] < 18.5 ,"Underweight",
             IF('weight-height-updated'[BMI] < 25,"Normal",
             IF('weight-height-updated'[BMI] < 30,"Overweight",
             IF('weight-height-updated'[BMI] >=30 ,"Obese")))
 )
-
 ```
 
 ### Part 3: Data Visualisation
+- Card Insights (KPIs)
+Visual Type: Cards
+Metrics Displayed: `Average Height`, `Average Weight`, `Average BMI` & `Total Number of Population`
+Purpose: Quickly identify the typical physical characteristics of individuals
 
+- Comparative Analysis
+Visual Type: Clustered Bar Chart
+Metric: `Average BMI` by `Gender`
+Purpose: Visualize Gender by Average BMI
+
+- Comparative Analysis
+Visual Type: Stacked Bar Chart
+Metrics Displayed: `BMI Categories` by `Gender`
+Purpose: Visualise gender-based differences in BMI values
+
+- KPI Gauge:
+Visual Type: Gauge
+Metric: Average BMI
+Purpose: Custom BMI gauge to visually represent where a value falls within the health spectrum
+
+4. Age Demographics
+Visual Type: Donut Chart
+Metric: Distribution of `Age Category` by `Gender`
+Purpose: Show the distribution of ages.
+
+5. Filtering for Insights
+Visual Type: Slicer
+Field: Gender, BMI group
+Purpose: Allow users to filter the entire report by `gender` and/or `BMI Group`, updating all visuals dynamically.
+
+6. Detailed Table
+Visual Type: Table
+Included Columns: Age, Height, Weight, BMI, BMI Group
+Enhancements:
+Conditional Formatting: `Colour-coded` BMI values (e.g., light green for underweight, dark green for obese)
+
+## Conclusion
+The Health Data Dashboard effectively visualises health metrics, providing actionable insights into BMI and age distribution. 
+The use of rounded KPIs, interactive filters, and varied visuals ensures a user-friendly experience. 
+
+ 
  
 
 
